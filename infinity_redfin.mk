@@ -4,19 +4,19 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Infinity stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/redfin/aosp_redfin.mk)
-$(call inherit-product, device/google/redbull/lineage_common.mk)
+$(call inherit-product, device/google/redbull/infinity_common.mk)
 
-include device/google/redfin/device-lineage.mk
+include device/google/redfin/device-infinity.mk
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 5
-PRODUCT_NAME := lineage_redfin
+PRODUCT_NAME := infinity_redfin
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
